@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Blog Post - Annim Banerjee</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/blog-post.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="rows">
+        	<div class="col-sm-3"></div>
+        	<div class="col-sm-6">
+	            <!-- Brand and toggle get grouped for better mobile display -->
+	            <div class="navbar-header">
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                <a class="navbar-brand" href="https://www.nordicsemi.com/eng/Products/Bluetooth-Smart-Bluetooth-low-energy/nRF51822">BLE using Nordic</a>
+	            </div>
+	            <!-- Collect the nav links, forms, and other content for toggling -->
+	            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	                <ul class="nav navbar-nav">
+	                    <li>
+	                        <a href="#">About the author</a>
+	                    </li>
+	                </ul>
+	            </div>
+	            <!-- /.navbar-collapse -->
+	        </div>
+	        <!-- /.container -->
+        </div>
+        <div class="col-sm-3"></div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="rows">
+    	<div class="col-sm-3"></div>
+    	<div class="col-sm-6">
+                <!-- Blog Post -->
+
+                <!-- Title -->
+                <h1>Bluetooth Low Energy</h1>
+
+                <!-- Author -->
+                <p class="lead">
+                    using <a href="#">Nordic's nrf51822</a>
+                </p>
+
+                <hr>
+
+                <!-- Date/Time -->
+                <p><span class="glyphicon glyphicon-time"></span> Posted on Month date, year at hh:mm AM/PM</p>
+
+                <hr>
+
+                <!-- Preview Image -->
+                <img class="img-responsive" src="http://blog.btlowenergy.com/wp-content/uploads/2012/10/Logo-6_Bluetooth-Smart.jpg" alt="" >
+
+                <hr>
+
+                <!-- Post Content -->
+                <div class="">
+                
+                	<div class="page-header">
+					  <h3>Bluetooth Low Energy<small>aka Smart bluetooth</small></h3>
+					</div>
+					
+					<p>
+					Bluetooth® Smart is the intelligent, power-friendly version of Bluetooth wireless technology. 
+					While the power-efficiency of Bluetooth Smart makes it perfect for devices needing to run off a tiny battery for long periods, 
+					the magic of Bluetooth Smart is its ability to work with an application on the smartphone or tablet you already own.
+					Bluetooth Smart is an application-friendly technology supported by every major operating system. 
+					The technology costs less and offers flexible development architecture for creating applications to bring everyday objects like heart-rate monitors, 
+					toothbrushes, and shoes into the connected world and have them communicate with applications that reside on the Bluetooth Smart compatible smartphones, 
+					tablets, or similar devices those consumers already own. 
+					</p>
+					
+					<div class="page-header">
+					  <h3>BLE Development Boards<small>not all are listed here</small></h3>
+					</div>
+					
+					<div id="devBoardsImages">
+						<a href="http://www.digikey.com/product-detail/en/CC2540DK-MINI/296-28079-ND/2503773">
+							<img title="From TI" src="http://media.digikey.com/Photos/Texas%20Instr%20Photos/MFG_CC2540DK-MINI_sml.jpg" alt="BLE CC2540" class="img-rounded" width="140" height="140">
+						</a>
+						<a href=https://www.bluegiga.com/en-US/products/bluetooth-4.0-modules/ble112-bluetooth--smart-module/"">
+							<img title="From BlueGiga" width="140" height="140" src="https://bluegiga.studio.crasman.fi/file/dl/c=product_big/IPWKDA/yRSUEV3YDmRDTKlSR0TR6A/BLE112_M_RGB_front.jpg" alt="..." class="img-rounded">
+						</a>
+						<a href="http://www.rfduino.com/">
+							<img title="From RFDuino" width="140" height="140" src="http://d3uifzcxlzuvqz.cloudfront.net/images/stories/jreviews/1465_rfduino-kit2-1363542916.jpg" alt="..." class="img-rounded">
+						</a>
+						
+						<a href="http://www.u-blox.com/en/bluetooth-wifi-multiradio-modules/bluetooth-low-energy/ols425-bluetooth-low-energy-module.html">
+							<img title="From u-blox" width="140" height="140" src="http://www.u-blox.com/images/stories/ols425.jpg" alt="..." class="img-rounded">
+						</a>
+						
+						<a href="http://www.blueradios.com/hardware_LE4.0-S2.htm">
+							<img title="From blueradios" width="140" height="140" src="http://www.blueradios.com/images/nblue_S2A_module_small.jpg" alt="..." class="img-rounded">
+						</a>
+						
+						
+						<p>
+						
+						All the above boards are having there own pros and cons, for now i am not going into the details, do look in the datasheet for more details. For now i 
+						will work with nordic semiconductor's NRF51 BLE modules, and thi spage will walk you through to get started with NRF BLE. If you are looking for a proper
+						guide to getting started with NRF BLE then you are at right place.
+						
+						</p>
+						
+					</div>
+					
+					<div class="page-header">
+					  <h3>Development Kit to buy<small>minimal for getting started.</small></h3>
+					</div>
+                	
+                	
+                		<p style="text-align: center;">
+                		
+                		<a href="http://www.digikey.com/product-detail/en/NRF51822-DK/1490-1009-ND/4626373">
+							<img title="From nordic Semiconductor ASA" src="http://media.digikey.com/photos/Nordic%20Semiconductor%20ASA/NRF51822-DK_sml.jpg" alt="..." class="img-rounded">
+						</a>
+                		
+                		</p>
+                		
+                		<p>
+                			This is the basic minimal requirement to get started with BLE development. This will cost you not more than $110 and many components are included with this
+                			like segger j-link and 5 nrf51822 ICs and supporting connectors. there is another board for it named as "motherboard". The "motherboard" is not mandatory
+                			to start development with nrf BLEs. With this buy, you ill get one KEY or say PRODUCT KEY against which you can download required and necessary softwares
+                			like nrf SDK and nrfStudio which will help you in the course of development.
+                		</p>
+                		
+                </div>
+                
+               		 <div class="page-header">
+					  <h3>Hardware kit arrived?<small>Whats inside the box?</small></h3>
+					</div>
+                	
+                	
+                		<p style="text-align: center;">
+                		
+                		<a href="http://www.digikey.com/product-detail/en/NRF51822-DK/1490-1009-ND/4626373">
+							<img title="From nordic Semiconductor ASA" src="http://media.digikey.com/photos/Nordic%20Semiconductor%20ASA/NRF51822-DK_sml.jpg" alt="..." class="img-rounded">
+						</a>
+                		
+                		</p>
+                		
+                		<p>
+                			
+                			<ul class="list-group">
+                				<li class="list-group-item active">
+                				
+                					Things you will find inside the box
+                				</li>
+							  <li class="list-group-item">
+							  
+							  Segger J-Link Lite Cortex M
+							  	
+							  </li>
+							  <li class="list-group-item">
+							  
+							  PAC10004 nRF Go Board.
+							  
+							  </li>
+							  <li class="list-group-item">
+							  	PAC10001 nRF Go Board with Anetnna.
+							  
+							  </li>
+							  
+							  
+							  <li class="list-group-item">
+							  	PAC 10000 Dongle
+							  </li>
+							  <li class="list-group-item">
+								
+								5 x ICs nrf51822.
+
+							  </li>
+							  <li class="list-group-item">
+								
+								Ribbon cable to connect from Segger to PAC10001 and PAC10004 board.
+
+							  </li>
+							  <li class="list-group-item">
+								
+								5 x ICs nrf51822.
+
+							  </li>
+							  <li class="list-group-item">
+								
+								USB Cable x 1
+
+							  </li>
+							</ul>
+                			
+                		</p>
+                		
+                		
+                	<div class="page-header">
+					  <h3>Softwares to download?<small>Do not misplace your key!</small></h3>
+					</div>
+					
+					<p>
+					
+					Firstly, create an account in nordic semiconductor's web site. Next, do add the Product key under your product section. this way you will be unlocking 
+					your product, now you can download the softwares. Few softwares are allowed to dowload for free too.
+					
+					<div class="list-group">
+					  <a href="https://www.nordicsemi.com/eng/Products/Bluetooth-Smart-Bluetooth-low-energy/nRF51822-Development-Kit" class="list-group-item">
+					    nRF51822 Development Kit Software Downloads, required software are listed below...(or pick the latest versions of the same so mentioned below...)
+					  </a>
+					  <a href="#" class="list-group-item">Code: S110-SDS, software bluetooth stack specification.</a>
+					  <a href="#" class="list-group-item">Code: S110-SD-v7, software bluetooth stack aka SoftDevice.</a>
+					  <a href="#" class="list-group-item">Code: nRF-MCP-xx, Master Control Panel with Master emulater, pick that which suits your OS architecture.</a>
+					  <a href="#" class="list-group-item">Code: nRF51-BLE-Driver, nRF51 Bluetooth Smart GATT/GAP driver for Windows. 
+					  Used to set up and interact with BLE on an nRF51 device with connectivity firmware and S110 SoftDevice.</a>
+					  <a href="#" class="list-group-item">Code: nRF51-SDK-zip ot the installer, nrf software development kit which includes all examples and libraries.</a>
+					  <a href="#" class="list-group-item">Code: nRF51-Tools, nRF51 toolset installer (JLinkARM, JLink CDC, nRFjprog, and mergehex)</a>
+					  <a href="#" class="list-group-item">Code: nRFgo Studio Win xx, pic the best suited for your machine's architecture. Used to Upload hex to board.</a>
+					  
+					</div>					
+					</p>
+					
+					<p>
+						Another interesting thing will be, integrating gcc with eclipse to start developing BLE applications, a proper guide you can get from the same page where you see the list of
+						softwares to download, under APPLICATION NOTES, it is been linked.
+						Now, keep those software with you somewhere safe, although you can download them again as you have unlocked that product.
+					</p>
+					
+					
+					<div class="page-header">
+					  <h3>Integrated Development Environment<small>eclipse, keil or IAR!</small></h3>
+					</div>
+					
+					<p>
+					
+						<div class="list-group">
+						  <a href="http://www.keil.com/arm/mdk.asp" class="list-group-item active">
+						    Download keil non-free version which has code size(32KB) limitations but to get things started you can use this.
+						  </a>
+						</div>
+						
+						<br><br>
+						Install the keil, and you will find the same examples are also provided in the "Device"	folder inside the keil installation folder. onces installation is done
+						you need to setup the hardware now.
+					</p>
+					
+		        <!-- Footer -->
+		        <footer>
+		            <div class="row">
+		                <div class="col-sm-12">
+		                    <p>Annim Banerjee, <a href="mailto:pixma38@gmail.com">Mail</a></p>
+		                    <p>
+		                    
+		                    <strong>Sources:</strong>
+		                    
+		                    <ul>
+		                    
+		                    	<li>
+		                    		<a href="http://blog.bluetooth-smart.com/2011/10/05/bluetooth-low-energy-development-kits-2/">
+		                    			http://blog.bluetooth-smart.com/2011/10/05/bluetooth-low-energy-development-kits-2/
+		                    		</a>
+		                    	</li>
+		                    	
+		                    	<li>
+		                    		<a href="http://www.digikey.com/">
+		                    			http://www.digikey.com/
+		                    		</a>
+		                    	</li>
+		                    	
+		                    	<li>
+		                    		<a href="">
+		                    			
+		                    		</a>
+		                    	</li>
+		                    	
+		                    	<li>
+		                    		<a href="">
+		                    			
+		                    		</a>
+		                    	</li>
+		                    	
+		                    	<li>
+		                    		<a href="">
+		                    			
+		                    		</a>
+		                    	</li>
+		                    	
+		                    	<li>
+		                    		<a href="">
+		                    			
+		                    		</a>
+		                    	</li>
+		                    </ul>
+		                    
+		                    
+		                    
+		                    </p>
+		                </div>
+		            </div>
+		            <!-- /.row -->
+		        </footer>
+		  </div>
+		  <div class="col-sm-3"></div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
